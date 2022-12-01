@@ -20,6 +20,16 @@
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/lightbox.css">
 
+    
+
+    <!-- Additional JS EmailJS Files -->
+    <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+      emailjs.init('zjbfLomYRuxz9xMRP')
+    </script>
+
   </head>
 
 <body>
@@ -51,7 +61,7 @@
   <!-- ***** Main Banner Area Start ***** -->
   <section class="section main-banner" id="top" data-section="section1">
       <video autoplay muted loop id="bg-video">
-          <source src="assets/images/course-video.mp4" type="video/mp4" />
+          <source src="assets/images/demo-cv.mp4" type="video/mp4" />
       </video>
 
       <div class="video-overlay header-text">
@@ -94,7 +104,7 @@
                 <h4><i class="fa fa-map-marker"></i>Dirección</h4>
               </div>
               <div class="content-hide">
-                <h6>Av. Los Ruiseiñores</h6>
+                <h6>Av. Los Ruiseñores</h6>
                 <h6>N° 465 INT. B-403</h6>
                 <h6>SANTA ANITA-LIMA</h6>
                 <!-- <div class="scroll-to-section"><a href="#section3">Details</a></div> -->
@@ -191,7 +201,7 @@
     </div>
   </section>
 
-  <section class="section coming-soon" data-section="section3">
+  <!-- <section class="section coming-soon" data-section="section3">
     <div class="container">
       <div class="row">
         <div class="col-md-7 col-xs-12">
@@ -257,7 +267,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <section class="section courses" data-section="section4">
     <div class="container-fluid">
@@ -361,17 +371,17 @@
             <h4>Trabajamos en distintos proyectos <em>de nuestros clientes</em></h4>
             <!-- <p>. You may <a rel="nofollow" href="https://templatemo.com/contact" target="_parent">contact TemplateMo</a> for details.
             <br><br>Suspendisse tincidunt, magna ut finibus rutrum, libero dolor euismod odio, nec interdum quam felis non ante.</p> -->
-            <p>Fundado hace más de 15 años con la finalidad de brindar un servicio de calidad en alquiler de equipos y maquinarias para la construcción, minería y afines, cumpliendo los más altos estándares de calidad</p>
-            <div class="main-button"><a rel="nofollow" href="https://fb.com/templatemo" target="_parent">External URL</a></div>
+            <p>Fundado hace más de 15 años con la finalidad de brindar un servicio de calidad en alquiler de equipos y maquinarias para la construcción, minería y afines, cumpliendo los más altos estándares de calidad.</p>
+            <!-- <div class="main-button"><a rel="nofollow" href="https://fb.com/templatemo" target="_parent">External URL</a></div> -->
           </div>
         </div>
         <div class="col-md-6">
           <article class="video-item">
             <div class="video-caption">
-              <h4>Power HTML Template</h4>
+              <h4>MAQUINARIA PESADA</h4>
             </div>
             <figure>
-              <a href="https://www.youtube.com/watch?v=r9LtOG6pNUw" class="play"><img src="assets/images/main-thumb.png"></a>
+              <a href="https://www.youtube.com/watch?v=88OujZRZ1zA" class="play"><img src="assets/images/machine-history.png"></a>
             </figure>
           </article>
         </div>
@@ -393,21 +403,27 @@
                 	
                     Please visit https://templatemo.com/contact page -->
                     
-          <form id="contact" action="" method="post">
+          <!-- 
+          <form id="contact" action="http://formsubmit.co/14defca0d80b9365467ff85dc8b5dfe6" method="post"> 
             <div class="row">
               <div class="col-md-6">
-                  <fieldset>
-                    <input name="name" type="text" class="form-control" id="name" placeholder="Nombre" required="">
-                  </fieldset>
-                </div>
-                <div class="col-md-6">
-                  <fieldset>
-                    <input name="email" type="text" class="form-control" id="email" placeholder="Correo" required="">
-                  </fieldset>
-                </div>
+                <fieldset>
+                  <input name="name" type="text" class="form-control" id="name" placeholder="Nombre" required="">
+                </fieldset>
+              </div>
+              <div class="col-md-6">
+                <fieldset>
+                  <input name="email" type="text" class="form-control" id="email" placeholder="Correo" required="">
+                </fieldset>
+              </div>
               <div class="col-md-12">
                 <fieldset>
-                  <textarea name="message" rows="6" class="form-control" id="message" placeholder="Mensaje..." required=""></textarea>
+                  <input name="subject" type="text" class="form-control" id="subject" placeholder="Asunto" required="">
+                </fieldset>
+              </div>
+              <div class="col-md-12">
+                <fieldset>
+                  <textarea name="comments" rows="6" class="form-control" id="comments" placeholder="Mensaje..." required=""></textarea>
                 </fieldset>
               </div>
               <div class="col-md-12">
@@ -416,12 +432,37 @@
                 </fieldset>
               </div>
             </div>
+          </form>  
+          -->
+          <form id="form">
+            <div class="row">
+              <div class="col-md-6">
+                <fieldset>
+                  <input name="from_name" type="text" class="form-control" id="from_name" placeholder="Nombre" required="">
+                </fieldset>
+              </div>
+              <div class="col-md-6">
+                <fieldset>
+                  <input name="email_id" type="text" class="form-control" id="email_id" placeholder="Correo" required="">
+                </fieldset>
+              </div>
+              <div class="col-md-12">
+                <fieldset>
+                  <textarea name="message" rows="6" class="form-control" id="message" placeholder="Mensaje..." required=""></textarea>
+                </fieldset>
+              </div>
+              <div class="col-md-12">
+                <fieldset>
+                  <button type="submit" id="button-submit" class="button">Enviar Mensaje</button>
+                </fieldset>
+              </div>
+            </div>
           </form>
         </div>
         <div class="col-md-6">
           <div id="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.8759993825865!2d-76.97065847112434!3d-12.052051817962854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c6625be0cac3%3A0xd3b5ed78a7d2f0aa!2sAv.%20Los%20Ruise%C3%B1ores%20465%2C%20Lima%2015008%2C%20Per%C3%BA!5e0!3m2!1ses!2sus!4v1669860390187!5m2!1ses!2sus" 
-              width="100%" height="422px" style="border:0;" allowfullscreen>
+              width="100%" height="425px" style="border:0;" allowfullscreen>
             </iframe>
           </div>
         </div>
@@ -433,18 +474,14 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <p><i class="fa fa-copyright"></i> Copyright 2020 by Grad School  
-          
-           | Design: <a href="https://templatemo.com" rel="sponsored" target="_parent">TemplateMo</a><br>
-           Distributed By: <a href="https://themewagon.com" rel="sponsored" target="_blank">ThemeWagon</a>
-          
-          </p>
+          <p><i class="fa fa-copyright"></i> Corporación C&V | Av. Los Ruiseñores N° 465 Int. B-403 Santa Anita - Perú | (51 1) 383-0366</p>
         </div>
       </div>
     </div>
   </footer>
 
   <!-- Scripts -->
+  <script type="text/javascript" src="assets/js/email.js"></script>
   <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
