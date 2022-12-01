@@ -490,7 +490,7 @@ section.features .col-4 {
 /* Why Choosing Us */
 
 section.why-us {
-    background-image: url(../images/choosing-bg.jpg);
+    background-image: url(../images/contact-bg.jpg);
     background-color: #172238;
     background-repeat: no-repeat;
     background-size: cover;
@@ -795,7 +795,7 @@ section.coming-soon form button {
 /* Courses */
 
 section.courses {
-    background-image: url(../images/choosing-bg.jpg);
+    background-image: url(../images/contact-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #172238;
